@@ -1,0 +1,14 @@
+$(function(){
+    $('.burger').click(function(){
+        $('header').slideUp();
+        $('main').slideUp();
+        $(this).hide();
+        $('.x').slideDown();
+    });
+    $('.x').click(function(){
+        $('header').slideDown();
+        $('main').slideDown();
+        $('.burger').show();
+        $('.x').slideUp();
+    });
+});
